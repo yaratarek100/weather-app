@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+
+
+      <nav>
+
+        <a class="logo">
+          <img alt="" src="img/logo.png"/>
+          <div>
+          <h1>Weather</h1>
+          <small>tagline goes here</small>
+          </div>
+        </a>
+
+        <div class="bars">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <div class="nav-list">
+          <ul>
+            <li>
+              <a class="nav-link">Home</a>
+            </li>
+            <li>
+              <a class="nav-link">News</a>
+            </li>
+            <li>
+              <a class="nav-link">Live cameras</a>
+            </li>
+            <li>
+              <a class="nav-link">Photos</a>
+            </li>
+            <li>
+              <a class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+      <form>
+        <input placeholder="Find your location..." type="text" name="location"/>
+        <button>Find</button>
+      </form>
+
+      <div class="res">
+        
+        <div id="first" class="day">
+          <div class="day-header">
+            <h3 class="day-name"></h3>
+            <h3 class="day-num"></h3>
+          </div>
+          <div class="day-body">
+          <div class="city"></div>
+          <div class="first-deg">
+          <div class="w-deg"><span class="current-deg"></span><sup>o</sup>C</div>
+          <div class="w-icon">
+            <img src=""/>
+          </div>
+        </div>
+          <div class="w-state"></div>
+          <div class="w-details">
+            <span><img src="img/icon-umberella.png"/> <span class="w-values"></span></span>
+            <span><img src="img/icon-wind.png"/><span class="w-values"></span></span>
+            <span><img src="img/icon-compass.png"/> <span class="w-values"></span> </span>
+          </div>
+          </div>
+        </div>
+        <div id="second" class="day">
+          <div class="day-header">
+            <h3 class="day-name"></h3>
+          </div>
+          <div class="day-body">
+            <div class="w-icon">
+              <img src=""/>
+            </div>
+          <div class="w-deg"><span class="max-deg"></span><sup>o</sup>C</div>
+          <small class="min-deg"><sup>o</sup>C</small>
+          <div class="w-state"></div>
+        </div>
+        </div>
+
+        <div id="thierd" class="day">
+       <div class="day-header">
+            <h3 class="day-name"></h3>
+          </div>
+          <div class="day-body">
+            <div class="w-icon">
+              <img src=""/>
+            </div>
+          <div class="w-deg"><span class="max-deg"></span><sup>o</sup>C</div>
+          <small class="min-deg"><sup>o</sup>C</small>
+          <div class="w-state"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="box">
+      <form>
+        <input placeholder="Enter your email to subscribe..." type="email"/>
+        <button>subscribe</button>
+      </form>
+      <div class="cont-icons">
+        <a href="" class="cont-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="" class="cont-link"><i class="fab fa-twitter"></i></a>
+        <a href="" class="cont-link"><i class="fab fa-google-plus-g"></i></a>
+        <a href="" class="cont-link"><i class="fab fab fa-pinterest"></i></a>
+      </div>
+    </div>
+      <p>
+        Copyright 2014 Company name. Designed by Themezy. All rights reserved
+      </p>
+    </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
