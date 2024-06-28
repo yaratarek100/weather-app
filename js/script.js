@@ -11,6 +11,8 @@ const state = document.querySelectorAll(".w-state"); //3
 const maxTem = document.querySelectorAll(".max-deg"); //2
 const minTem = document.querySelectorAll(".min-deg"); //2
 const wValues = document.querySelectorAll(".w-values");
+const windDirectionImg = document.querySelector('img[src="img/icon-compass.png"]');
+
 // small screen menu
 const menu = document.querySelector(".bars");
 const navList = document.querySelector(".nav-list ul");
@@ -100,6 +102,7 @@ async function getWeather(query) {
   wValues[0].innerHTML = days[0].day.daily_chance_of_rain + "%";
   wValues[1].innerHTML = current.wind_kph + "km/h";
   wValues[2].innerHTML = windDirections[current.wind_dir];
+  windDirectionImg.style.transform=`rotate(${current.wind_degree-90}deg)`;
 
   // div 2 &3
   for (i = 1; i < 3; i++) {
@@ -141,12 +144,18 @@ function dateFormat(apiDate, div1) {
   return dayFullName;
 }
 
-
 menu.addEventListener("click", () => {
-  if (navList.style.height == "0px") {
+  if (navList.style.height == "" || navList.style.height == "0px") {
     navList.style.height = "317px";
   } else {
     navList.style.height = "0px";
   }
 });
 
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 950) {
+    navList.style.height = "auto";
+  } else {
+    navList.style.height = "0px";
+  }
+});

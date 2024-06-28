@@ -85,9 +85,8 @@ nav a {
     margin-inline: auto;
     margin-block: 8px;
   }
-
 }
-.bars:hover .bar{
+.bars:hover .bar {
   background-color: var(--sec-color);
 }
 .nav-list ul {
@@ -190,12 +189,13 @@ form input {
   font-size: 14px;
   font-weight: 300;
 }
+
+
 #first {
   text-align: left;
-  .city{
+  .city {
     color: var(--font-color-2);
     font-size: 2rem;
-
   }
   .w-details {
     display: flex;
@@ -281,7 +281,7 @@ form input {
     background-color: var(--main-color-2);
     border-radius: 15px;
     overflow: hidden;
-    height: auto;
+    height: 0;
     transition: all 0.5s;
   }
 
